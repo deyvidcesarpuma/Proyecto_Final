@@ -1,12 +1,106 @@
-.matriz {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    height: 100vh; 
+/* Quita los espacios que el navegador pone por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.matriz div {
-    background-color: lightgray; 
+/* Estilo general de toda la página */
+body {
+  background-color: #222222;
+  font-family: Georgia, serif;
+  color: #FFFFFF;
+  max-width: 1000px;     
+  margin: 0 auto;        
+}
+/* ENCABEZADO */
+.encabezado {
+  display: flex;             
+  align-items: center;       
+  background-color: #1E1E1E;
+  padding: 15px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
 }
 
+.encabezado h1 {
+  flex: 1;                   
+  text-align: center;        
+  font-size: 70px;
+  font-weight: normal;
+}
+
+/* ---------- MENÚ ---------- */
+.menu {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;   /* centra los enlaces */
+  gap: 70px;                 /* espacio entre enlaces */
+  padding: 10px;
+}
+
+.menu a {
+  color: #1E1E1E;
+  text-decoration: none;     /* quita el subrayado */
+  font-size: 18px;
+}
+
+.menu a:hover {
+  color: #c8803a;            /* cambia a dorado al pasar el mouse */
+}
+
+/* ---------- GALERÍA ---------- */
+.galeria {
+  display: flex;             /* izquierda y foto grande, lado a lado */
+  gap: 15px;
+  padding: 15px;
+  background-color: white;
+}
+
+.izquierda {
+  flex: 3;                   /* ocupa 3 partes del ancho */
+  display: flex;
+  flex-direction: column;    /* las filas van una debajo de la otra */
+  gap: 15px;
+}
+
+.fila {
+  display: flex;             /* las fotos van una al lado de otra */
+  gap: 8px;
+  height: 180px;
+}
+
+.fila img {
+  flex: 1;                   /* todas las fotos del mismo ancho */
+  min-width: 0;
+  height: 100%;
+  object-fit: cover;         /* recorta la foto sin deformarla */
+}
+
+
+/* ---------- PIE DE PÁGINA ---------- */
+.pie {
+  display: flex;
+  justify-content: space-between;  /* separa los elementos */
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 15px;
+}
+
+.logo-pequeno {
+  width: 55px;
+  height: 55px;
+}
+
+.pie h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.pie p {
+  font-size: 12px;
+  width: 120px;
+  text-align: center;
+}
