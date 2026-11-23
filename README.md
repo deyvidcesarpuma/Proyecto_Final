@@ -27,3 +27,7 @@ La pagina que realice hoy es de platos 2 y el de bebidas
 -Detalles de la pagina
 Cree otro html para entrar a la pagina de platos 2 solo copie el encabezado y el pie de pagina ya que eso no cambian en todas las paginas lo unico que agregue seria que cambie las imagenes de otros platos y cambie la flecha para que sañale a otro lado y cuando ingrese a esa flecha me lleva a platos y tambien que cuando ingrese a inicio se dirija a la pagina de inicio 
 Cree la oagina de bebidas pero tambien no hubo muchas moficaciones solo agregue nuevos estilos ya que al final esta dos enlaces que me manden a otras paginas de bebidas lo mismo que el anterior cambie imagenes y no toque el encabezado y el pie de pagina 
+-Pagina Realizada
+La pagina realizada que hice es de bebidas-2 y bebidas-3
+-Detalle de la pagina
+La pagina que realize es el de bebidas 2 ya que solo era continiar con lo de bebidas original el de bebidas tambien el mismos encabezado y el mismo pie de pagina, cambie las imagenes y agregue la flecha para volver a la bebida original luego hice la bebida-3 pero las imagenes que son de las gaseosas no se acomodan como yo pensaba pero eso lo hare despues porque trate de aumentar un nuevo estilo pero no funciono 
