@@ -230,3 +230,84 @@ body {
   object-fit: contain;   /* muestra la botella completa */
   background-color: #FFFFFF;
 }
+
+/* PÁGINA DE INFORMACIÓN */
+.informacion {
+  background-color: #FFFFFF;
+  padding: 15px;
+  text-align: center;
+}
+
+.cuadro-texto {
+  background-color: #E4E4E4;   /* gris claro */
+  border-radius: 25px;         /* esquinas redondeadas */
+  padding: 20px 30px;
+  color: #1E1E1E;
+}
+
+.cuadro-texto h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.cuadro-texto p {
+  font-size: 14px;
+  line-height: 1.5;            /* espacio entre líneas */
+  margin-bottom: 10px;
+}
+
+.enlace-mision {
+  display: inline-block;
+  margin-top: 15px;
+  color: #1E1E1E;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.enlace-mision:hover {
+  color: #c8803a;
+}
+
+/* NUESTROS VALORES */
+.valores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* dos columnas del mismo ancho */
+  gap: 20px;                        /* espacio entre cuadros */
+}
+
+/* Anula el margen que pusiste para Misión y Visión,
+   porque aquí el espacio lo da "gap" */
+.valores .cuadro-texto + .cuadro-texto {
+  margin-top: 0;
+}
+
+/* Flecha circular hacia arriba */
+.flecha-arriba {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #1E1E1E;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto 0;              /* "auto" a los lados la centra */
+  color: #1E1E1E;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.flecha-arriba:hover {
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+}
+
+/* CONTACTOS */
+.cuadro-contacto {
+  min-height: 170px;        /* hace el cuadro más alto, como en tu diseño */
+}
+
+.cuadro-contacto p {
+  margin-bottom: 4px;       /* líneas más juntas, como una lista de datos */
+}

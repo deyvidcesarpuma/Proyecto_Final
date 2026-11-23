@@ -31,3 +31,13 @@ Cree la oagina de bebidas pero tambien no hubo muchas moficaciones solo agregue 
 La pagina realizada que hice es de bebidas-2 y bebidas-3
 -Detalle de la pagina
 La pagina que realize es el de bebidas 2 ya que solo era continiar con lo de bebidas original el de bebidas tambien el mismos encabezado y el mismo pie de pagina, cambie las imagenes y agregue la flecha para volver a la bebida original luego hice la bebida-3 pero las imagenes que son de las gaseosas no se acomodan como yo pensaba pero eso lo hare despues porque trate de aumentar un nuevo estilo pero no funciono 
+"Finalizacion 22 de noviembre"
+-Pagina realizada
+la pagina que realize es de postre y postre-2
+la pagina que realice es de informacion, informacion-2 y de informacion-3
+la pagina que realize es de contactos
+-detalle de la pagina 
+las paginas de postres no agregue css ya que es como hacer las paginas de platos ya que solo era cambiar las imagenes y acomodar pero la pagina de postre-2 me quedo mal una imagen pero lo arreglare mañana
+las paginas de informacion agregue nuevos css para acomodar las letras y para pode hacer el fondo de color plomo y que este centro tambien lo agregue para que en nuestra mision brille de naranja y me mande a informacion-2 de la misma manera agregue otro css para informacion-2 para quese divida en 4 fondos plomos y hice una nueva flecha para arriva ya que el otro muy grande ya que la flecha me manda a informacion original 
+la pagina de contacto agregue otro css para que se pueda centrar tambien lo de las letras y el fondo color plomo y eso solo era una pagina y no hubo muvho mas que hacer ahi 
+solo me faltaria hacer para tablet y celular y algunos detalles para acomodar las imagenes y los tamaños 
