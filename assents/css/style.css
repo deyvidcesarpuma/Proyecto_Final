@@ -51,6 +51,7 @@ body {
 .menu a:hover {
   color: #c8803a;
 }
+
 /*  GALERÍA (index)  */
 .galeria {
   display: flex;
@@ -177,19 +178,19 @@ body {
 /*  GASEOSAS  */
 .gaseosas {
   display: grid;
-  grid-template-columns: repeat(5, 170px);  
-  justify-content: center;                  
+  grid-template-columns: repeat(5, 170px);
+  justify-content: center;
 }
 
 .gaseosas .plato img {
   width: 100%;
-  height: 110px;          
-  object-fit: contain;      
+  height: 110px;
+  object-fit: contain;
 }
 
 /* La flecha cae en la segunda fila, junto a Simba */
 .gaseosas .flecha {
-  justify-self: start;      
+  justify-self: start;
   align-self: start;
   margin: 10px 0 0 40px;
 }
@@ -278,4 +279,177 @@ body {
 
 .cuadro-contacto p {
   margin-bottom: 4px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+
+  .encabezado h1 {
+    font-size: 44px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* El menú pasa a otra línea si los enlaces no caben */
+  .menu {
+    flex-wrap: wrap;
+    gap: 8px 25px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  /* Gaseosas */
+  .gaseosas {
+    grid-template-columns: repeat(3, 150px);
+  }
+
+  .gaseosas .flecha {
+    margin-left: 20px;
+  }
+
+  .pie h2 {
+    font-size: 24px;
+  }
+}
+
+/*  CELULAR  */
+@media (max-width: 480px) {
+
+  /* Encabezado */
+  .encabezado {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .encabezado h1 {
+    font-size: 28px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Menú compacto */
+  .menu {
+    gap: 4px 6px;
+    padding: 8px 5px;
+  }
+
+  .menu a {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  /* Inicio */
+  .galeria {
+    padding: 10px;
+  }
+
+  .izquierda {
+    gap: 10px;
+  }
+
+  .fila {
+    flex-wrap: wrap;
+    height: auto;           
+    gap: 10px;
+  }
+
+  .fila img {
+    flex: 1 1 45%;
+    height: 130px;
+  }
+
+  /* Platos, bebidas, postres */
+  .platos {
+    gap: 15px 10px;
+    padding: 15px 10px;
+  }
+
+  .plato {
+    width: calc(50% - 5px);
+  }
+
+  .plato img {
+    height: 100px;
+  }
+
+  /* Flecha más pequeña y centrada */
+  .flecha {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    margin: 5px auto 0;
+    align-self: center;
+  }
+
+  /* Gaseosas */
+  .gaseosas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gaseosas .plato {
+    width: 100%;
+  }
+
+  .gaseosas .flecha {
+    grid-column: 1 / -1;    
+    justify-self: center;
+    margin: 5px 0 0 0;
+  }
+
+  /* Información, Misión y Contactos */
+  .informacion {
+    padding: 10px;
+  }
+
+  .cuadro-texto {
+    padding: 15px;
+    border-radius: 18px;
+  }
+
+  .cuadro-contacto {
+    min-height: 0;
+  }
+
+  /* Valores */
+  .valores {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Pie de página en varias líneas */
+  .pie {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .logo-pequeno {
+    width: 50px;
+    height: 50px;
+  }
+
+  .pie h2 {
+    font-size: 18px;
+    width: 100%;
+    order: 3;               
+  }
+
+  .pie p {
+    width: auto;
+    font-size: 12px;
+  }
 }
