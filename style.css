@@ -1,87 +1,88 @@
-/* Quita los espacios que el navegador pone por defecto */
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo general de toda la página */
 body {
   background-color: #222222;
   font-family: Georgia, serif;
   color: #FFFFFF;
-  max-width: 1000px;     
-  margin: 0 auto;        
+  max-width: 1000px;
+  margin: 0 auto;
 }
-/* ENCABEZADO */
+
+/*  ENCABEZADO */
 .encabezado {
-  display: flex;             
-  align-items: center;       
+  display: flex;
+  align-items: center;
   background-color: #1E1E1E;
   padding: 15px;
 }
+
 .logo {
   width: 100px;
   height: 100px;
 }
 
 .encabezado h1 {
-  flex: 1;                   
-  text-align: center;        
+  flex: 1;
+  text-align: center;
   font-size: 70px;
   font-weight: normal;
 }
 
-/* MENÚ */
+/*  MENÚ  */
 .menu {
   background-color: #FFFFFF;
   display: flex;
-  justify-content: center;   /* centra los enlaces */
-  gap: 70px;                 /* espacio entre enlaces */
+  justify-content: center;
+  gap: 70px;
   padding: 10px;
 }
 
 .menu a {
   color: #1E1E1E;
-  text-decoration: none;     /* quita el subrayado */
+  text-decoration: none;
   font-size: 18px;
 }
 
 .menu a:hover {
-  color: #c8803a;            /* cambia a dorado al pasar el mouse */
+  color: #c8803a;
 }
-
-/* GALERÍA */
+/*  GALERÍA (index)  */
 .galeria {
-  display: flex;             /* izquierda y foto grande, lado a lado */
+  display: flex;
   gap: 15px;
   padding: 15px;
   background-color: white;
 }
 
 .izquierda {
-  flex: 3;                   /* ocupa 3 partes del ancho */
+  flex: 3;
   display: flex;
-  flex-direction: column;    /* las filas van una debajo de la otra */
+  flex-direction: column;
   gap: 15px;
 }
 
 .fila {
-  display: flex;             /* las fotos van una al lado de otra */
+  display: flex;
   gap: 15px;
   height: 180px;
 }
 
 .fila img {
-  flex: 3;                   /* todas las fotos del mismo ancho */
+  flex: 3;
   min-width: 0;
   height: 100%;
-  object-fit: cover;         /* recorta la foto sin deformarla */
+  object-fit: cover;
 }
-/* PIE DE PÁGINA */
+
+/*  PIE DE PÁGINA  */
 .pie {
   display: flex;
-  justify-content: space-between;  /* separa los elementos */
+  justify-content: space-between;
   align-items: center;
   background-color: #1a1a1a;
   padding: 15px;
@@ -102,42 +103,13 @@ body {
   width: 150px;
   text-align: center;
 }
-/* PÁGINA DE PLATOS */
+
+/*  PLATOS, BEBIDAS, JUGOS  */
 .platos {
   display: flex;
-  flex-wrap: wrap;           /* si no caben, pasan a la siguiente fila */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px 15px;            /* 20px entre filas, 15px entre columnas */
-  padding: 20px 15px;
-  background-color: #FFFFFF;
-}
-
-.plato {
-  width: 170px;
-  text-align: center;
-}
-
-/* PÁGINA DE PLATOS */
-.platos {
-  display: flex;
-  flex-wrap: wrap;           /* si no caben, pasan a la siguiente fila */
-  justify-content: center;
-  gap: 20px 15px;            /* 20px entre filas, 15px entre columnas */
-  padding: 20px 15px;
-  background-color: #FFFFFF;
-}
-
-.plato {
-  width: 170px;
-  text-align: center;
-}
-
-/* PÁGINA DE PLATOS */
-.platos {
-  display: flex;
-  flex-wrap: wrap;           /* si no caben, pasan a la siguiente fila */
-  justify-content: center;
-  gap: 20px 15px;            /* 20px entre filas, 15px entre columnas */
+  gap: 20px 15px;
   padding: 20px 15px;
   background-color: #FFFFFF;
 }
@@ -154,7 +126,6 @@ body {
   display: block;
 }
 
-
 .plato p {
   color: #1E1E1E;
   font-size: 12px;
@@ -166,11 +137,11 @@ body {
   width: 90px;
   height: 90px;
   border: 2px solid #1E1E1E;
-  border-radius: 50%;        /* 50% convierte el cuadrado en círculo */
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: flex-start;    /* se alinea arriba, junto a las fotos */
+  align-self: flex-start;
   margin-left: 30px;
   color: #1E1E1E;
   text-decoration: none;
@@ -182,38 +153,16 @@ body {
   color: #FFFFFF;
 }
 
-
-
-.plato p {
-  color: #1E1E1E;
-  font-size: 12px;
-  margin-top: 6px;
-}
-/* Botón circular con la flecha */
-.flecha {
-  width: 90px;
-  height: 90px;
-  border: 2px solid #1E1E1E;
-  border-radius: 50%;        /* 50% convierte el cuadrado en círculo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: flex-start;    /* se alinea arriba, junto a las fotos */
-  margin-left: 30px;
-  color: #1E1E1E;
-  text-decoration: none;
-  font-size: 40px;
-}
-/* BEBIDAS: los dos textos de abajo su fondo */
+/*  BEBIDAS: textos de abajo  */
 .categorias {
   background-color: #FFFFFF;
   display: flex;
-  flex-direction: column;    /* uno debajo del otro */
-  align-items: center;       /* centrados */
+  flex-direction: column;
+  align-items: center;
   gap: 15px;
   padding: 10px 15px 40px;
 }
-/*color de las letras*/
+
 .categorias a {
   color: #1E1E1E;
   text-decoration: none;
@@ -224,14 +173,28 @@ body {
 .categorias a:hover {
   color: #c8803a;
 }
-/* Solo para la página de gaseosas */
-.gaseosas{
-  height: 100px;
-  object-fit: contain;   /* muestra la botella completa */
-  background-color: #FFFFFF;
+
+/*  GASEOSAS  */
+.gaseosas {
+  display: grid;
+  grid-template-columns: repeat(5, 170px);  
+  justify-content: center;                  
 }
 
-/* PÁGINA DE INFORMACIÓN */
+.gaseosas .plato img {
+  width: 100%;
+  height: 110px;          
+  object-fit: contain;      
+}
+
+/* La flecha cae en la segunda fila, junto a Simba */
+.gaseosas .flecha {
+  justify-self: start;      
+  align-self: start;
+  margin: 10px 0 0 40px;
+}
+
+/*  INFORMACIÓN  */
 .informacion {
   background-color: #FFFFFF;
   padding: 15px;
@@ -239,8 +202,8 @@ body {
 }
 
 .cuadro-texto {
-  background-color: #E4E4E4;   /* gris claro */
-  border-radius: 25px;         /* esquinas redondeadas */
+  background-color: #E4E4E4;
+  border-radius: 25px;
   padding: 20px 30px;
   color: #1E1E1E;
 }
@@ -253,11 +216,17 @@ body {
 
 .cuadro-texto p {
   font-size: 14px;
-  line-height: 1.5;            /* espacio entre líneas */
+  line-height: 1.5;
   margin-bottom: 10px;
 }
 
-.enlace-mision {
+/* Espacio entre dos cuadros seguidos (Misión y Visión) */
+.cuadro-texto + .cuadro-texto {
+  margin-top: 15px;
+}
+
+.enlace-mision,
+.enlace-valores {
   display: inline-block;
   margin-top: 15px;
   color: #1E1E1E;
@@ -266,24 +235,23 @@ body {
   letter-spacing: 1px;
 }
 
-.enlace-mision:hover {
+.enlace-mision:hover,
+.enlace-valores:hover {
   color: #c8803a;
 }
 
-/* NUESTROS VALORES */
+/*  NUESTROS VALORES  */
 .valores {
   display: grid;
-  grid-template-columns: 1fr 1fr;   /* dos columnas del mismo ancho */
-  gap: 20px;                        /* espacio entre cuadros */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-/* Anula el margen que pusiste para Misión y Visión,
-   porque aquí el espacio lo da "gap" */
+/* Aquí el espacio lo da "gap", no el margen */
 .valores .cuadro-texto + .cuadro-texto {
   margin-top: 0;
 }
 
-/* Flecha circular hacia arriba */
 .flecha-arriba {
   width: 40px;
   height: 40px;
@@ -292,7 +260,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px auto 0;              /* "auto" a los lados la centra */
+  margin: 15px auto 0;
   color: #1E1E1E;
   text-decoration: none;
   font-size: 22px;
@@ -303,11 +271,11 @@ body {
   color: #FFFFFF;
 }
 
-/* CONTACTOS */
+/*  CONTACTOS  */
 .cuadro-contacto {
-  min-height: 170px;        /* hace el cuadro más alto, como en tu diseño */
+  min-height: 170px;
 }
 
 .cuadro-contacto p {
-  margin-bottom: 4px;       /* líneas más juntas, como una lista de datos */
+  margin-bottom: 4px;
 }
